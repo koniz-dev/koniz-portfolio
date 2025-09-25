@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Anh Kiệt - Software Engineer</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Nguyễn Anh Kiệt</div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text">Nguyễn Anh Kiệt</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Engineer</h2>
+          <p class="hero-description">
+            Passionate developer with 2 years of experience building scalable, user-focused web applications. 
+            Specialized in modern JavaScript frameworks and clean architecture principles.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-code"></i>
+              View Projects
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <img src="avatar.jpg" alt="Nguyễn Anh Kiệt" class="avatar-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="avatar-fallback" style="display: none;">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3>Software Engineer</h3>
+              <p>Ho Chi Minh City, VN</p>
+              <div class="social-links">
+                <a href="https://github.com/koniz-dev" target="_blank" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/koniz-dev" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:kietna.work@gmail.com" class="social-link">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-code"></i>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-layer-group"></i>
+            Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Vue 3</span>
+            <span class="skill-tag">Nuxt.js</span>
+            <span class="skill-tag">React 19</span>
+            <span class="skill-tag">Next.js 15</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Shadcn</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-server"></i>
+            Backend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-database"></i>
+            Database
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Elasticsearch</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-tools"></i>
+            Tools & Others
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Vitest</span>
+            <span class="skill-tag">Cypress</span>
+            <span class="skill-tag">Playwright</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="job-title">Full-Stack Developer</h3>
+              <span class="company">mHealth Technologies JSC</span>
+              <span class="duration">Jan 2024 - Feb 2025</span>
+            </div>
+            <ul class="job-achievements">
+              <li>
+                <i class="fas fa-check"></i>
+                Rebuilt company websites with Nuxt 3, improving code maintainability and enabling faster feature delivery
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Designed and launched new Wellcare features, increasing user engagement and product conversion
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Optimized chatbot memory for better context handling, improving response accuracy and attracting new business partners
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Integrated Elasticsearch + Notion CMS to streamline content management and improve user satisfaction
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="job-title">Frontend Developer Intern</h3>
+              <span class="company">mHealth Technologies JSC</span>
+              <span class="duration">Oct 2023 - Dec 2023</span>
+            </div>
+            <ul class="job-achievements">
+              <li>
+                <i class="fas fa-check"></i>
+                Developed responsive design for complex chart components, improving usability across devices
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Resolved critical bugs and enhanced transaction metadata, stabilizing payment workflows
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Implemented UI components for Knowledge Questions and Expert Verification features
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                Integrated LangChain to build a health chatbot, enabling faster and more accurate medical queries
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <div class="project-links">
+              <a href="https://ecommerce-store-tau-indol.vercel.app" target="_blank" class="project-link" title="Live Demo - Store">
+                <i class="fas fa-store"></i>
+                <span>Store</span>
+              </a>
+              <a href="https://ecommerce-admin-chi-ten.vercel.app" target="_blank" class="project-link" title="Live Demo - Admin">
+                <i class="fas fa-cogs"></i>
+                <span>Admin</span>
+              </a>
+              <a href="https://github.com/koniz-dev/ecommerce-store" target="_blank" class="project-link" title="Store Source Code">
+                <i class="fab fa-github"></i>
+                <span>Store Code</span>
+              </a>
+              <a href="https://github.com/koniz-dev/ecommerce-admin" target="_blank" class="project-link" title="Admin Source Code">
+                <i class="fab fa-github"></i>
+                <span>Admin Code</span>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Full-stack e-commerce platform built with Next.js 15, structured across two separate repositories with modern architecture and comprehensive features.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js 15</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Prisma</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-features">
+            <h4>Repository Structure:</h4>
+            <ul>
+              <li><i class="fas fa-store"></i> <strong>ecommerce-store:</strong> Customer-facing storefront with product browsing, filtering, cart management, and checkout</li>
+              <li><i class="fas fa-cogs"></i> <strong>ecommerce-admin:</strong> Admin dashboard with multi-store management, CRUD operations for products, orders, and categories</li>
+            </ul>
+            <h4>Key Features:</h4>
+            <ul>
+              <li><i class="fas fa-mobile-alt"></i> Responsive design with modern UI/UX</li>
+              <li><i class="fas fa-search"></i> Advanced product filtering and search</li>
+              <li><i class="fas fa-building"></i> Multi-store management system</li>
+              <li><i class="fas fa-chart-line"></i> Comprehensive admin dashboard</li>
+              <li><i class="fas fa-rocket"></i> Deployed on Vercel with CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education-section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <div class="education-header">
+          <h3 class="degree">Bachelor of Engineering in Information Systems</h3>
+          <span class="gpa">GPA: 3.45/4.0</span>
+        </div>
+        <div class="education-details">
+          <span class="university">University of Information Technology - VNUHCM</span>
+          <span class="graduation">2020 - 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's work together!</h3>
+          <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>(+84) 816 630 164</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>kietna.work@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+          </div>
+          <div class="contact-languages">
+            <h4>Languages:</h4>
+            <p><strong>English:</strong> TOEIC Reading & Listening: 545 / Speaking & Writing: 240</p>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:kietna.work@gmail.com" class="btn btn-primary btn-large">
+            <i class="fas fa-envelope"></i>
+            Send Email
+          </a>
+          <a href="https://www.linkedin.com/in/koniz-dev" target="_blank" class="btn btn-secondary btn-large">
+            <i class="fab fa-linkedin"></i>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Nguyễn Anh Kiệt. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/koniz-dev" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/koniz-dev" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:kietna.work@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    body.classList.toggle('dark-theme', currentTheme === 'dark');
+    updateThemeIcon(currentTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      const newTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+    
+    function updateThemeIcon(theme) {
+      const icon = themeToggle.querySelector('i');
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Add scroll effect to navbar and scroll to top button
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      const scrollToTopBtn = document.getElementById('scrollToTop');
+      
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        navbar.classList.remove('scrolled');
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    // Scroll to top functionality
+    document.getElementById('scrollToTop').addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
