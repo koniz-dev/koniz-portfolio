@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing software engineering skills an
 
 ## 🚀 Live Demo
 
-Visit the live website: [https://koniz-dev.github.io/koniz-dev-portfolio](https://koniz-dev.github.io/koniz-dev-portfolio)
+Visit the live website: [https://koniz-dev.github.io/koniz-portfolio](https://koniz-dev.github.io/koniz-portfolio)
 
 ## ✨ Features
 
@@ -33,7 +33,7 @@ Visit the live website: [https://koniz-dev.github.io/koniz-dev-portfolio](https:
 ## 📁 Project Structure
 
 ```
-koniz-dev-portfolio/
+koniz-portfolio/
 ├── index.html          # Main HTML file with portfolio content
 ├── style.css           # Main stylesheet with theme support
 ├── avatar.jpg          # Profile avatar image
@@ -51,12 +51,12 @@ koniz-dev-portfolio/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/koniz-dev/koniz-dev-portfolio.git
+git clone https://github.com/koniz-dev/koniz-portfolio.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd koniz-dev-portfolio
+cd koniz-portfolio
 ```
 
 3. Open `index.html` in your web browser or use a local server:
@@ -141,7 +141,7 @@ Replace `avatar.jpg` with your own profile picture:
 2. Go to Repository Settings → Pages
 3. Select "Deploy from a branch"
 4. Choose your main branch and root folder
-5. Your site will be available at `https://yourusername.github.io/koniz-dev-portfolio`
+5. Your site will be available at `https://yourusername.github.io/koniz-portfolio`
 
 ### Other Hosting Options
 
@@ -171,7 +171,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/koniz-dev/koniz-dev-portfolio/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/koniz-dev/koniz-portfolio/issues).
 
 ## ⭐ Show Your Support
 
