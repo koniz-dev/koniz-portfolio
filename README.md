@@ -166,7 +166,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Nguyễn Anh Kiệt**
 - GitHub: [@koniz-dev](https://github.com/koniz-dev)
-- LinkedIn: [koniz-dev](https://www.linkedin.com/in/koniz-dev)
+- LinkedIn: [koniz-dev](https://www.linkedin.com/in/kiet-nguyen-583463276)
 - Email: kietna.work@gmail.com
 
 ## 🤝 Contributing
