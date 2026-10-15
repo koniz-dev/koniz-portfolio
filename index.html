@@ -503,15 +503,36 @@
     const scrollToTopBtn = document.getElementById('scrollToTop');
     const scrollProgress = document.getElementById('scrollProgress');
 
-    function onScroll() {
-      const scrolled = window.scrollY > 100;
-      navbar.classList.toggle('scrolled', scrolled);
-      scrollToTopBtn.classList.toggle('visible', scrolled);
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      scrollProgress.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+    let maxScroll = 0;
+    let wasScrolled = null;
+    let scrollQueued = false;
+
+    function measure() {
+      maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
+    // Batch scroll work into one update per frame, and only touch classes when the state flips
+    function onScroll() {
+      scrollQueued = false;
+      const y = window.scrollY;
+      const scrolled = y > 100;
+      if (scrolled !== wasScrolled) {
+        wasScrolled = scrolled;
+        navbar.classList.toggle('scrolled', scrolled);
+        scrollToTopBtn.classList.toggle('visible', scrolled);
+      }
+      scrollProgress.style.transform = `scaleX(${maxScroll > 0 ? y / maxScroll : 0})`;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!scrollQueued) {
+        scrollQueued = true;
+        requestAnimationFrame(onScroll);
+      }
+    }, { passive: true });
+    window.addEventListener('resize', () => { measure(); onScroll(); });
+    window.addEventListener('load', () => { measure(); onScroll(); });
+    measure();
     onScroll();
 
     scrollToTopBtn.addEventListener('click', () => {
