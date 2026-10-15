@@ -752,17 +752,6 @@ section {
   background: color-mix(in srgb, var(--accent) 10%, var(--bg-tertiary));
 }
 
-.skill-category-cta {
-  border-style: dashed;
-  background: transparent;
-}
-
-.cta-text {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
 /* Experience Section — git log style */
 .timeline {
   position: relative;
