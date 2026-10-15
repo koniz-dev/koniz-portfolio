@@ -661,8 +661,13 @@ section {
 /* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+}
+
+/* 5 cards: the last one spans the rest of its row (2 of 3 cols, or a full 2-col row) */
+.skills-grid > .skill-category:last-child {
+  grid-column: span 2;
 }
 
 .skill-category {
@@ -1339,6 +1344,10 @@ section {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -1412,6 +1421,10 @@ section {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-grid > .skill-category:last-child {
+    grid-column: auto;
   }
 
   .section-title::after {
