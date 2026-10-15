@@ -1,6 +1,6 @@
 # Nguyễn Anh Kiệt - Portfolio Website
 
-A modern, responsive portfolio website showcasing software engineering skills and projects. Features a clean design with dark/light theme toggle, smooth animations, and comprehensive project showcase.
+A developer-flavoured, responsive portfolio website. The UI borrows from the tools engineers live in: a typing terminal with `neofetch` in the hero, `git log --graph` work history, editor-style skill files and repo-style project cards — with dark/light themes and smooth animations.
 
 ## 🚀 Live Demo
 
@@ -11,8 +11,8 @@ Visit the live website: [https://koniz-dev.github.io/koniz-portfolio](https://ko
 - **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
 - **Dark/Light Theme**: Toggle between dark and light themes with persistent preference
 - **Smooth Animations**: Intersection Observer API for scroll-triggered animations
-- **Modern UI/UX**: Clean, professional design with gradient accents and smooth transitions
-- **Interactive Navigation**: Smooth scrolling navigation with active section highlighting
+- **Terminal / IDE aesthetic**: Animated terminal hero, git-log timeline, syntax-highlight colour palette
+- **Interactive Navigation**: Smooth scrolling, active section highlighting, scroll progress bar and mobile menu
 - **Project Showcase**: Comprehensive display of technical skills and featured projects
 - **Contact Integration**: Direct links to email, LinkedIn, and GitHub
 - **Performance Optimized**: Fast loading with optimized assets and modern CSS
@@ -24,7 +24,7 @@ Visit the live website: [https://koniz-dev.github.io/koniz-portfolio](https://ko
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and CSS Custom Properties
 - **Vanilla JavaScript**: Interactive features, theme toggle, and smooth scrolling
 - **Font Awesome**: Professional icons for UI elements
-- **Google Fonts**: Inter font family for modern typography
+- **Google Fonts**: Inter for body text, JetBrains Mono for code-flavoured UI
 - **CSS Variables**: Dynamic theming with light/dark mode support
 - **Intersection Observer API**: Scroll-triggered animations
 - **Local Storage**: Theme preference persistence
@@ -80,17 +80,17 @@ php -S localhost:8000
 
 Edit the following sections in `index.html`:
 
-- **Hero Section** (lines 32-96): Name, title, professional summary, and contact information
-- **Skills Section** (lines 98-178): Technical skills organized by categories
-- **Experience Section** (lines 180-244): Work experience timeline
-- **Projects Section** (lines 246-302): Featured projects showcase
-- **Education Section** (lines 304-319): Academic background
-- **Contact Section** (lines 321-360): Contact information and social links
+- **Hero Section**: Name, title, professional summary, and contact information
+- **Skills Section**: Technical skills organized by categories
+- **Experience Section**: Work experience timeline
+- **Projects Section**: Featured projects showcase
+- **Education Section**: Academic background
+- **Contact Section**: Contact information and social links
 
 ### Styling
 
 Modify `style.css` to customize:
-- **CSS Variables** (lines 8-43): Color schemes for light and dark themes
+- **CSS Variables**: Color schemes for light and dark themes
 - **Typography**: Font families and text styling
 - **Layout**: Grid and flexbox layouts
 - **Animations**: Transitions and scroll-triggered effects
@@ -99,9 +99,9 @@ Modify `style.css` to customize:
 ### Theme Customization
 
 The website supports both light and dark themes. To customize:
-1. Modify CSS variables in `:root` for light theme
-2. Update `.dark-theme` variables for dark theme
-3. Theme preference is automatically saved in localStorage
+1. Modify CSS variables in `:root` for the dark theme (default)
+2. Update `:root[data-theme="light"]` variables for the light theme
+3. Theme preference is saved in localStorage; first visit follows the OS setting
 
 ### Avatar Image
 
@@ -119,7 +119,7 @@ Replace `avatar.jpg` with your own profile picture:
 ## 🎯 Key Features Explained
 
 ### Theme Toggle
-- Click the moon/sun icon in the navigation to switch themes
+- Click the sun/moon icon in the navigation to switch themes
 - Theme preference is automatically saved and restored on page reload
 - Smooth transitions between light and dark modes
 
