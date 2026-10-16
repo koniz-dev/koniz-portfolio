@@ -23,20 +23,24 @@ Visit the live website: [https://koniz-dev.github.io/koniz-portfolio](https://ko
 - **HTML5**: Semantic markup with proper structure and accessibility
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and CSS Custom Properties
 - **Vanilla JavaScript**: Interactive features, theme toggle, and smooth scrolling
-- **Font Awesome**: Professional icons for UI elements
+- **Inline SVG icons**: Font Awesome Free icons embedded as an SVG sprite (no icon font download)
 - **Google Fonts**: Inter for body text, JetBrains Mono for code-flavoured UI
 - **CSS Variables**: Dynamic theming with light/dark mode support
 - **Intersection Observer API**: Scroll-triggered animations
 - **Local Storage**: Theme preference persistence
-- **GitHub Pages**: Free hosting and deployment
+- **GitHub Pages + GitHub Actions**: Deployed by `.github/workflows/deploy.yml` on every push to `main`
 
 ## 📁 Project Structure
 
 ```
 koniz-portfolio/
+├── .github/workflows/
+│   └── deploy.yml      # GitHub Pages deployment
 ├── index.html          # Main HTML file with portfolio content
 ├── style.css           # Main stylesheet with theme support
-├── avatar.jpg          # Profile avatar image
+├── avatar.jpg          # Profile avatar image (256x256)
+├── favicon.svg         # Site icon
+├── og.jpg              # Link preview image (1200x630)
 └── README.md           # Project documentation
 ```
 
@@ -106,7 +110,7 @@ The website supports both light and dark themes. To customize:
 ### Avatar Image
 
 Replace `avatar.jpg` with your own profile picture:
-- Recommended size: 300x300px or larger
+- Recommended size: 256x256px (it is displayed at 112px)
 - Format: JPG, PNG, or WebP
 - The image includes a fallback icon if loading fails
 
@@ -137,11 +141,9 @@ Replace `avatar.jpg` with your own profile picture:
 
 ### GitHub Pages (Recommended)
 
-1. Push your code to a GitHub repository
-2. Go to Repository Settings → Pages
-3. Select "Deploy from a branch"
-4. Choose your main branch and root folder
-5. Your site will be available at `https://yourusername.github.io/koniz-portfolio`
+1. Go to Repository Settings → Pages and set **Source** to **GitHub Actions**
+2. Push to `main` — `.github/workflows/deploy.yml` publishes the site
+3. Only the files copied in the workflow's "Collect site files" step are published, so add any new asset there
 
 ### Other Hosting Options
 

@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyễn Anh Kiệt - Software Engineer</title>
   <meta name="description" content="Nguyễn Anh Kiệt — Software Engineer building scalable, user-focused web applications with Vue, Nuxt, Next.js and Node.js.">
+  <meta name="author" content="Nguyễn Anh Kiệt">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="canonical" href="https://koniz-dev.github.io/koniz-portfolio/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koniz-dev.github.io/koniz-portfolio/">
+  <meta property="og:title" content="Nguyễn Anh Kiệt - Software Engineer">
+  <meta property="og:description" content="Software Engineer building scalable, user-focused web applications with Vue, Nuxt, Next.js and Node.js.">
+  <meta property="og:image" content="https://koniz-dev.github.io/koniz-portfolio/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nguyễn Anh Kiệt — Software Engineer">
+  <meta name="twitter:card" content="summary_large_image">
   <script>
     // Apply saved theme before paint to avoid a flash
     (function () {
@@ -18,10 +31,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <!-- Icons: Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/license/free (Icons: CC BY 4.0) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow-right" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></symbol>
+    <symbol id="i-arrow-up-right-from-square" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></symbol>
+    <symbol id="i-bars" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 448 512"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></symbol>
+    <symbol id="i-chess-rook" viewBox="0 0 448 512"><path d="M32 192V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V192c0 10.1-4.7 19.6-12.8 25.6L352 256l16 144H80L96 256 44.8 217.6C36.7 211.6 32 202.1 32 192zm176 96h32c8.8 0 16-7.2 16-16V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 8.8 7.2 16 16 16zM22.6 473.4L64 432H384l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H38.6C26.1 512 16 501.9 16 489.4c0-6 2.4-11.8 6.6-16z"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></symbol>
+    <symbol id="i-code-branch" viewBox="0 0 448 512"><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 512 512"><path d="M448 384H256c-35.3 0-64-28.7-64-64V64c0-35.3 28.7-64 64-64H396.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V320c0 35.3-28.7 64-64 64zM64 128h96v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H256c8.8 0 16-7.2 16-16V416h48v32c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192c0-35.3 28.7-64 64-64z"/></symbol>
+    <symbol id="i-database" viewBox="0 0 448 512"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></symbol>
+    <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol>
+    <symbol id="i-gauge-high" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol>
+    <symbol id="i-hackerrank" viewBox="0 0 512 512"><path d="M477.5 128C463 103.05 285.13 0 256.16 0S49.25 102.79 34.84 128s-14.49 230.8 0 256 192.38 128 221.32 128S463 409.08 477.49 384s14.51-231 .01-256zM316.13 414.22c-4 0-40.91-35.77-38-38.69.87-.87 6.26-1.48 17.55-1.83 0-26.23.59-68.59.94-86.32 0-2-.44-3.43-.44-5.85h-79.93c0 7.1-.46 36.2 1.37 72.88.23 4.54-1.58 6-5.74 5.94-10.13 0-20.27-.11-30.41-.08-4.1 0-5.87-1.53-5.74-6.11.92-33.44 3-84-.15-212.67v-3.17c-9.67-.35-16.38-1-17.26-1.84-2.92-2.92 34.54-38.69 38.49-38.69s41.17 35.78 38.27 38.69c-.87.87-7.9 1.49-16.77 1.84v3.16c-2.42 25.75-2 79.59-2.63 105.39h80.26c0-4.55.39-34.74-1.2-83.64-.1-3.39.95-5.17 4.21-5.2 11.07-.08 22.15-.13 33.23-.06 3.46 0 4.57 1.72 4.5 5.38C333 354.64 336 341.29 336 373.69c8.87.35 16.82 1 17.69 1.84 2.88 2.91-33.62 38.69-37.58 38.69z"/></symbol>
+    <symbol id="i-layer-group" viewBox="0 0 576 512"><path d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></symbol>
+    <symbol id="i-location-dot" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></symbol>
+    <symbol id="i-mobile-screen" viewBox="0 0 384 512"><path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></symbol>
+    <symbol id="i-npm" viewBox="0 0 576 512"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></symbol>
+    <symbol id="i-puzzle-piece" viewBox="0 0 512 512"><path d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8v0c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2v0c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2v0c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2v0c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8v0c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320v0c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256v0C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2v0z"/></symbol>
+    <symbol id="i-screwdriver-wrench" viewBox="0 0 512 512"><path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></symbol>
+    <symbol id="i-server" viewBox="0 0 512 512"><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></symbol>
+    <symbol id="i-shield-halved" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 576 512"><path d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></symbol>
+    <symbol id="i-vial" viewBox="0 0 512 512"><path d="M342.6 9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4L28.1 342.6C10.1 360.6 0 385 0 410.5V416c0 53 43 96 96 96h5.5c25.5 0 49.9-10.1 67.9-28.1L448 205.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-32-32-96-96-32-32zM205.3 256L352 109.3 402.7 160l-96 96H205.3z"/></symbol>
+    <symbol id="i-xmark" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol>
+  </svg>
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="bg-grid" aria-hidden="true"></div>
 
@@ -40,10 +87,10 @@
       </div>
       <div class="nav-actions">
         <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fas fa-sun"></i>
+          <svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>
         </button>
         <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-          <i class="fas fa-bars"></i>
+          <svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg>
         </button>
       </div>
     </div>
@@ -65,6 +112,7 @@
           <p class="hero-description">
             Passionate developer with 2 years of experience building scalable, user-focused web applications.
             Specialized in modern JavaScript frameworks and clean architecture principles.
+            I enjoy taking a product from a rough idea to something people can use — across web, mobile and DevOps.
           </p>
           <div class="hero-stats">
             <div class="stat">
@@ -76,17 +124,17 @@
               <span class="stat-label">technologies</span>
             </div>
             <div class="stat">
-              <span class="stat-number" data-count="5">5</span><span class="stat-plus">+</span>
-              <span class="stat-label">projects</span>
+              <span class="stat-number" data-count="15">15</span><span class="stat-plus">+</span>
+              <span class="stat-label">github_repos</span>
             </div>
           </div>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">
-              <i class="fas fa-terminal"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg>
               Get In Touch
             </a>
             <a href="#projects" class="btn btn-secondary">
-              <i class="fas fa-code-branch"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-code-branch"/></svg>
               View Projects
             </a>
           </div>
@@ -104,9 +152,9 @@
               <div class="term-line" data-step="2"><span class="t-prompt">❯</span> <span class="t-cmd" data-type="neofetch"></span></div>
               <div class="term-out neofetch" data-step="3">
                 <div class="profile-avatar">
-                  <img src="avatar.jpg" alt="Nguyễn Anh Kiệt" class="avatar-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <img src="avatar.jpg" alt="Nguyễn Anh Kiệt" class="avatar-image" width="256" height="256" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                   <div class="avatar-fallback" style="display: none;">
-                    <i class="fas fa-user"></i>
+                    <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
                   </div>
                 </div>
                 <div class="neo-info">
@@ -116,20 +164,27 @@
                   <div><span class="neo-key">Location</span>: Ho Chi Minh City, VN</div>
                   <div><span class="neo-key">Uptime</span>: 2+ years</div>
                   <div><span class="neo-key">Shell</span>: TypeScript</div>
-                  <div><span class="neo-key">Stack</span>: Vue · Nuxt · Next · Nest</div>
+                  <div><span class="neo-key">Stack</span>: Vue · Nuxt · Next · Nest · Flutter</div>
+                  <div><span class="neo-key">Learning</span>: DevOps · AWS</div>
                   <div class="neo-palette"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                 </div>
               </div>
               <div class="term-line" data-step="4"><span class="t-prompt">❯</span> <span class="t-cmd" data-type="ls ./socials"></span></div>
               <div class="term-out social-links" data-step="5">
                 <a href="https://github.com/koniz-dev" target="_blank" rel="noopener" class="social-link">
-                  <i class="fab fa-github"></i> github
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github
                 </a>
                 <a href="https://www.linkedin.com/in/kiet-nguyen-583463276" target="_blank" rel="noopener" class="social-link">
-                  <i class="fab fa-linkedin"></i> linkedin
+                  <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> linkedin
                 </a>
                 <a href="mailto:kietna.work@gmail.com" class="social-link">
-                  <i class="fas fa-envelope"></i> email
+                  <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg> email
+                </a>
+                <a href="https://leetcode.com/koniz-dev/" target="_blank" rel="noopener" class="social-link">
+                  <svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> leetcode
+                </a>
+                <a href="https://www.hackerrank.com/koniz_dev" target="_blank" rel="noopener" class="social-link">
+                  <svg class="icon" aria-hidden="true"><use href="#i-hackerrank"/></svg> hackerrank
                 </a>
               </div>
               <div class="term-line" data-step="6"><span class="t-prompt">❯</span> <span class="cursor" aria-hidden="true"></span></div>
@@ -139,7 +194,7 @@
       </div>
       <a href="#skills" class="scroll-hint" aria-label="Scroll to skills">
         <span>scroll</span>
-        <i class="fas fa-chevron-down"></i>
+        <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
       </a>
     </section>
 
@@ -153,22 +208,25 @@
         <div class="skills-grid">
           <div class="skill-category reveal" style="--accent: var(--c-yellow)">
             <h3 class="category-title">
-              <i class="fas fa-code"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>
               Languages
               <span class="file-ext">languages.ts</span>
             </h3>
             <div class="skill-tags">
               <span class="skill-tag">JavaScript (ES6+)</span>
               <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Dart</span>
               <span class="skill-tag">HTML5</span>
               <span class="skill-tag">CSS3</span>
               <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Bash</span>
             </div>
           </div>
 
           <div class="skill-category reveal" style="--accent: var(--c-green)">
             <h3 class="category-title">
-              <i class="fas fa-layer-group"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-layer-group"/></svg>
               Frontend
               <span class="file-ext">frontend.vue</span>
             </h3>
@@ -182,9 +240,24 @@
             </div>
           </div>
 
+          <div class="skill-category reveal" style="--accent: var(--c-orange)">
+            <h3 class="category-title">
+              <svg class="icon" aria-hidden="true"><use href="#i-mobile-screen"/></svg>
+              Mobile
+              <span class="file-ext">main.dart</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Riverpod</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Expo</span>
+              <span class="skill-tag">Expo Router</span>
+            </div>
+          </div>
+
           <div class="skill-category reveal" style="--accent: var(--c-pink)">
             <h3 class="category-title">
-              <i class="fas fa-server"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-server"/></svg>
               Backend
               <span class="file-ext">backend.ts</span>
             </h3>
@@ -200,7 +273,7 @@
 
           <div class="skill-category reveal" style="--accent: var(--c-blue)">
             <h3 class="category-title">
-              <i class="fas fa-database"></i>
+              <svg class="icon" aria-hidden="true"><use href="#i-database"/></svg>
               Database
               <span class="file-ext">schema.sql</span>
             </h3>
@@ -216,15 +289,19 @@
 
           <div class="skill-category reveal" style="--accent: var(--c-purple)">
             <h3 class="category-title">
-              <i class="fas fa-tools"></i>
-              Tools &amp; Others
+              <svg class="icon" aria-hidden="true"><use href="#i-screwdriver-wrench"/></svg>
+              DevOps &amp; Tools
               <span class="file-ext">Dockerfile</span>
             </h3>
             <div class="skill-tags">
               <span class="skill-tag">Git</span>
               <span class="skill-tag">Docker</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Cloudflare Workers</span>
+              <span class="skill-tag">AWS</span>
               <span class="skill-tag">Figma</span>
               <span class="skill-tag">Vitest</span>
+              <span class="skill-tag">Jest</span>
               <span class="skill-tag">Cypress</span>
               <span class="skill-tag">Playwright</span>
             </div>
@@ -245,7 +322,7 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <div class="commit-meta">
-                <span class="duration"><i class="far fa-calendar"></i> Jan 2024 - Feb 2025</span>
+                <span class="duration"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Jan 2024 - Feb 2025</span>
               </div>
               <div class="timeline-header">
                 <h3 class="job-title">Full-Stack Developer</h3>
@@ -264,7 +341,7 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <div class="commit-meta">
-                <span class="duration"><i class="far fa-calendar"></i> Oct 2023 - Dec 2023</span>
+                <span class="duration"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Oct 2023 - Dec 2023</span>
               </div>
               <div class="timeline-header">
                 <h3 class="job-title">Frontend Developer Intern</h3>
@@ -289,65 +366,208 @@
           <span class="section-path">~/koniz/<span class="c-accent">projects</span></span>
           <h2 class="section-title"><span class="section-num">04.</span> Featured Projects</h2>
         </header>
+
+        <article class="project-card window reveal">
+          <div class="window-bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="window-title"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> koniz-dev / clash-blueprint-engine</span>
+            <span class="badge-live"><i></i> featured</span>
+          </div>
+          <div class="project-body">
+            <div class="project-main">
+              <h3 class="project-title">Clash Blueprint Engine</h3>
+              <p class="project-description">
+                Framework-independent, game-agnostic engine for designing, validating, analyzing and simulating grid-based base layouts (Clash of Clans), with a Next.js + Konva editor on top.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Konva</span>
+                <span class="tech-tag">Turborepo</span>
+                <span class="tech-tag">Vitest</span>
+                <span class="tech-tag">Playwright</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/koniz-dev/clash-blueprint-engine" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+                <a href="https://koniz-dev.github.io/clash-blueprint-engine/" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
+                  <span>API docs</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-features">
+              <h4><span class="c-muted">#</span> Highlights</h4>
+              <ul class="feature-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-layer-group"/></svg> Hexagonal core with commands, undo/redo and event sourcing</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-puzzle-piece"/></svg> Data-driven game packs validated with zod</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-shield-halved"/></svg> 0–100 defense score with weak-point detection</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-chess-rook"/></svg> Deterministic attack simulator with A* and flow-field pathfinding</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> ASCII / SVG / Mermaid renderers and JSON import/export</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-vial"/></svg> 103 unit tests and Playwright e2e tests in CI</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
         <div class="projects-grid">
-          <article class="project-card window reveal">
+          <article class="project-tile window reveal">
             <div class="window-bar">
               <span class="dots"><i></i><i></i><i></i></span>
-              <span class="window-title"><i class="fab fa-github"></i> koniz-dev / ecommerce</span>
-              <span class="badge-live"><i></i> live</span>
+              <span class="window-title">koniz-dev / vinyl-music-player</span>
             </div>
-            <div class="project-body">
-              <div class="project-main">
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <p class="project-description">
-                  Full-stack e-commerce platform built with Next.js 15, structured across two separate repositories with modern architecture and comprehensive features.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Next.js 15</span>
-                  <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">Tailwind CSS</span>
-                  <span class="tech-tag">Prisma</span>
-                  <span class="tech-tag">MongoDB</span>
-                  <span class="tech-tag">Vercel</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://ecommerce-store-tau-indol.vercel.app" target="_blank" rel="noopener" class="project-link project-link-primary" title="Live Demo - Store">
-                    <i class="fas fa-store"></i>
-                    <span>Store</span>
-                  </a>
-                  <a href="https://ecommerce-admin-chi-ten.vercel.app" target="_blank" rel="noopener" class="project-link project-link-primary" title="Live Demo - Admin">
-                    <i class="fas fa-cogs"></i>
-                    <span>Admin</span>
-                  </a>
-                  <a href="https://github.com/koniz-dev/ecommerce-store" target="_blank" rel="noopener" class="project-link" title="Store Source Code">
-                    <i class="fab fa-github"></i>
-                    <span>Store Code</span>
-                  </a>
-                  <a href="https://github.com/koniz-dev/ecommerce-admin" target="_blank" rel="noopener" class="project-link" title="Admin Source Code">
-                    <i class="fab fa-github"></i>
-                    <span>Admin Code</span>
-                  </a>
-                </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Vinyl Music Player</h3>
+              <p class="project-description">Turns an audio file into a vinyl-spin music video with synced lyrics — rendered and exported entirely in the browser, with in-browser Whisper for lyric auto-sync. Audio never leaves the device.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Canvas</span>
+                <span class="tech-tag">Web Audio</span>
+                <span class="tech-tag">transformers.js</span>
+                <span class="tech-tag">PWA</span>
               </div>
+              <div class="project-links">
+                <a href="https://koniz-dev.github.io/vinyl-music-player/" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
+                  <span>Live demo</span>
+                </a>
+                <a href="https://github.com/koniz-dev/vinyl-music-player" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
-              <div class="project-features">
-                <h4><span class="c-muted">#</span> Repository Structure</h4>
-                <ul class="file-tree">
-                  <li><span class="tree-branch">├──</span> <i class="fas fa-store"></i> <strong>ecommerce-store/</strong> <span class="tree-note">Customer-facing storefront with product browsing, filtering, cart management, and checkout</span></li>
-                  <li><span class="tree-branch">└──</span> <i class="fas fa-cogs"></i> <strong>ecommerce-admin/</strong> <span class="tree-note">Admin dashboard with multi-store management, CRUD operations for products, orders, and categories</span></li>
-                </ul>
-                <h4><span class="c-muted">#</span> Key Features</h4>
-                <ul class="feature-list">
-                  <li><i class="fas fa-mobile-alt"></i> Responsive design with modern UI/UX</li>
-                  <li><i class="fas fa-search"></i> Advanced product filtering and search</li>
-                  <li><i class="fas fa-building"></i> Multi-store management system</li>
-                  <li><i class="fas fa-chart-line"></i> Comprehensive admin dashboard</li>
-                  <li><i class="fas fa-rocket"></i> Deployed on Vercel with CI/CD</li>
-                </ul>
+          <article class="project-tile window reveal">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="window-title">koniz-dev / flutter-starter</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Flutter Enterprise Starter</h3>
+              <p class="project-description">Secure and scalable Flutter starter built on Clean Architecture, with Riverpod + Freezed, a Dio HTTP client, unit/widget/integration tests and Mason bricks for scaffolding.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Riverpod</span>
+                <span class="tech-tag">Freezed</span>
+                <span class="tech-tag">Fastlane</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/koniz-dev/flutter-starter" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-tile window reveal">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="window-title">koniz-dev / canvaslens</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">CanvasLens</h3>
+              <p class="project-description">Image viewing and annotation library shipped as a <code>&lt;canvas-lens&gt;</code> Web Component: zoom &amp; pan, annotation tools, before/after comparison and overlay mode. Works with any framework.</p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Web Components</span>
+                <span class="tech-tag">Rollup</span>
+                <span class="tech-tag">Jest</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.npmjs.com/package/@koniz-dev/canvaslens" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-npm"/></svg>
+                  <span>npm</span>
+                </a>
+                <a href="https://github.com/koniz-dev/canvaslens" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-tile window reveal">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="window-title">koniz-dev / react-native-starter</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">React Native Starter</h3>
+              <p class="project-description">Expo starter that is production-ready by configuration: protected routes with Expo Router, a backend-agnostic auth adapter with secure token storage, zod-validated env and a tested CI setup.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Jest</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/koniz-dev/react-native-starter" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-tile window reveal">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="window-title">koniz-dev / git-sync-all</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">git sync-all</h3>
+              <p class="project-description">Git subcommand that syncs a superproject and all its submodules onto one branch. Ships with shell completions and installers, tested in CI on macOS, Ubuntu and Windows.</p>
+              <pre class="install"><code><span class="c-green">$</span> brew tap koniz-dev/tap &amp;&amp; brew install git-sync-all</code></pre>
+              <div class="project-tech">
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">PowerShell</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">Homebrew</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/koniz-dev/git-sync-all" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-tile window reveal">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="window-title">koniz-dev / ecommerce</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">E-Commerce Platform</h3>
+              <p class="project-description">Full-stack e-commerce platform built with Next.js 15: a customer storefront plus an admin dashboard with multi-store management and CRUD for products, orders and categories.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js 15</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Prisma</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ecommerce-admin-chi-ten.vercel.app" target="_blank" rel="noopener" class="project-link project-link-primary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-gauge-high"/></svg>
+                  <span>Admin demo</span>
+                </a>
               </div>
             </div>
           </article>
         </div>
+
+        <a href="https://github.com/koniz-dev?tab=repositories" target="_blank" rel="noopener" class="more-link reveal">
+          <span class="c-green">$</span> ls ~/github --all <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
       </div>
     </section>
 
@@ -384,18 +604,18 @@
             <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
             <dl class="contact-details">
               <div class="contact-item">
-                <dt><i class="fas fa-phone"></i> phone</dt>
+                <dt><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> phone</dt>
                 <dd><a href="tel:+84816630164">(+84) 816 630 164</a></dd>
               </div>
               <div class="contact-item">
-                <dt><i class="fas fa-envelope"></i> email</dt>
+                <dt><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg> email</dt>
                 <dd>
                   <a href="mailto:kietna.work@gmail.com">kietna.work@gmail.com</a>
-                  <button class="copy-btn" data-copy="kietna.work@gmail.com" aria-label="Copy email"><i class="far fa-copy"></i></button>
+                  <button class="copy-btn" data-copy="kietna.work@gmail.com" aria-label="Copy email"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
                 </dd>
               </div>
               <div class="contact-item">
-                <dt><i class="fas fa-map-marker-alt"></i> location</dt>
+                <dt><svg class="icon" aria-hidden="true"><use href="#i-location-dot"/></svg> location</dt>
                 <dd>Ho Chi Minh City, Vietnam</dd>
               </div>
             </dl>
@@ -412,11 +632,11 @@
               </div>
               <div class="contact-terminal-body">
                 <a href="mailto:kietna.work@gmail.com" class="btn btn-primary btn-large">
-                  <i class="fas fa-envelope"></i>
+                  <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
                   Send Email
                 </a>
                 <a href="https://www.linkedin.com/in/kiet-nguyen-583463276" target="_blank" rel="noopener" class="btn btn-secondary btn-large">
-                  <i class="fab fa-linkedin"></i>
+                  <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
                   Connect on LinkedIn
                 </a>
               </div>
@@ -429,7 +649,7 @@
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" id="scrollToTop" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-arrow-up"></i>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
   </button>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -441,13 +661,13 @@
         <p><span class="c-green">❯</span> &copy; <span id="year">2024</span> Nguyễn Anh Kiệt. Built with vanilla HTML, CSS &amp; JS.</p>
         <div class="footer-links">
           <a href="https://github.com/koniz-dev" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fab fa-github"></i>
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/kiet-nguyen-583463276" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
           </a>
           <a href="mailto:kietna.work@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
+            <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
           </a>
         </div>
       </div>
@@ -462,7 +682,7 @@
     const themeToggle = document.getElementById('themeToggle');
 
     function updateThemeIcon(theme) {
-      themeToggle.querySelector('i').className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      themeToggle.querySelector('use').setAttribute('href', theme === 'dark' ? '#i-sun' : '#i-moon');
     }
 
     updateThemeIcon(root.getAttribute('data-theme'));
@@ -481,7 +701,7 @@
     function setMenu(open) {
       navLinks.classList.toggle('open', open);
       menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.querySelector('i').className = open ? 'fas fa-xmark' : 'fas fa-bars';
+      menuToggle.querySelector('use').setAttribute('href', open ? '#i-xmark' : '#i-bars');
     }
 
     menuToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
@@ -572,7 +792,7 @@
     });
 
     // Rotating role in the hero
-    const roles = ['Software Engineer', 'Full-Stack Developer', 'Vue & Nuxt Developer', 'Next.js Developer'];
+    const roles = ['Software Engineer', 'Full-Stack Developer', 'Mobile Developer', 'Vue & Nuxt Developer', 'Next.js Developer'];
     const typedRole = document.getElementById('typedRole');
 
     if (!prefersReducedMotion) {
