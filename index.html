@@ -18,6 +18,45 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nguyễn Anh Kiệt — Software Engineer">
   <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nguyễn Anh Kiệt",
+    "alternateName": "Kiet Nguyen",
+    "jobTitle": "Software Engineer",
+    "url": "https://koniz-dev.github.io/koniz-portfolio/",
+    "image": "https://koniz-dev.github.io/koniz-portfolio/avatar.jpg",
+    "email": "mailto:kietna.work@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ho Chi Minh City",
+      "addressCountry": "VN"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Information Technology - VNUHCM"
+    },
+    "knowsAbout": [
+      "TypeScript",
+      "Vue",
+      "Nuxt",
+      "React",
+      "Next.js",
+      "Node.js",
+      "NestJS",
+      "Flutter",
+      "React Native",
+      "Docker"
+    ],
+    "sameAs": [
+      "https://github.com/koniz-dev",
+      "https://www.linkedin.com/in/kiet-nguyen-583463276",
+      "https://leetcode.com/koniz-dev/",
+      "https://www.hackerrank.com/koniz_dev"
+    ]
+  }
+  </script>
   <script>
     // Apply saved theme before paint to avoid a flash
     (function () {
@@ -30,7 +69,9 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Load web fonts without blocking first paint -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"></noscript>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -75,7 +116,7 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#about" class="nav-brand" aria-label="Back to top">
+      <a href="#about" class="nav-brand" aria-label="koniz@dev:~$ — back to top">
         <span class="prompt-user">koniz</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-path">:~$</span><span class="cursor" aria-hidden="true"></span>
       </a>
       <div class="nav-links" id="navLinks">
@@ -100,7 +141,7 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
       <div class="container hero-content">
-        <div class="hero-text reveal">
+        <div class="hero-text">
           <p class="hero-comment">// hello, world — xin chào 👋</p>
           <h1 class="hero-title">
             <span class="hero-name">Nguyễn Anh Kiệt</span>
@@ -140,7 +181,7 @@
           </div>
         </div>
 
-        <div class="hero-terminal reveal">
+        <div class="hero-terminal">
           <div class="window terminal">
             <div class="window-bar">
               <span class="dots"><i></i><i></i><i></i></span>
@@ -152,7 +193,7 @@
               <div class="term-line" data-step="2"><span class="t-prompt">❯</span> <span class="t-cmd" data-type="neofetch"></span></div>
               <div class="term-out neofetch" data-step="3">
                 <div class="profile-avatar">
-                  <img src="avatar.jpg" alt="Nguyễn Anh Kiệt" class="avatar-image" width="256" height="256" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <img src="avatar.jpg" srcset="avatar-128.jpg 128w, avatar.jpg 256w" sizes="(max-width: 480px) 88px, 112px" alt="Nguyễn Anh Kiệt" class="avatar-image" width="256" height="256" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                   <div class="avatar-fallback" style="display: none;">
                     <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
                   </div>
@@ -750,10 +791,9 @@
         requestAnimationFrame(onScroll);
       }
     }, { passive: true });
+    // ResizeObserver fires after layout, so reading the height here never forces a reflow
+    new ResizeObserver(() => { measure(); onScroll(); }).observe(document.body);
     window.addEventListener('resize', () => { measure(); onScroll(); });
-    window.addEventListener('load', () => { measure(); onScroll(); });
-    measure();
-    onScroll();
 
     scrollToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });

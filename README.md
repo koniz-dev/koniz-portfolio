@@ -37,8 +37,10 @@ koniz-portfolio/
 ├── .github/workflows/
 │   └── deploy.yml      # GitHub Pages deployment
 ├── index.html          # Main HTML file with portfolio content
+├── 404.html            # Terminal-style not-found page
 ├── style.css           # Main stylesheet with theme support
 ├── avatar.jpg          # Profile avatar image (256x256)
+├── avatar-128.jpg      # Smaller avatar for low-DPI screens
 ├── favicon.svg         # Site icon
 ├── og.jpg              # Link preview image (1200x630)
 └── README.md           # Project documentation
